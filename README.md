@@ -258,6 +258,58 @@ Destructuring is a new feature introduced in ES6 to unpack values from arrays or
     console.log(fruit3); // banana
 ```
 
+### 6. Array - Map, Reduce and Filter
+
+Map, Reduce and Filter are the array methods which was introduced in ES6. The common things among these three methods are that when these methods applied on an array, it returns a new array based on the given parameter.
+
+⇒ **Map Method**
+
+Let's understand the Map method by taking a simple example. Let's say you have users array that contains multiple user object. But, you just need the username of each user.
+
+How will you do that? Here is one way to do it.
+
+```
+    const users = [
+      { name: 'Deepak', username: 'dipakkr', password: '123456'},
+      { name: 'Rohan', username: 'rohan12', password: '198243' },
+      { name: 'Sam', username: 'sam124', password: '123876' },
+    ];
+
+    var usernames = [];
+
+    users.forEach(function(user) {
+      usernames.push(user.username);
+    });
+
+    console.log(usernames); // [ 'dipakkr', 'rohan12', 'sam124', 'ro123' ]
+```
+
+Now, let's solve this problem with `map()` method.
+
+```
+    const users = [
+      { name: 'Deepak', username: 'dipakkr', password: '123456'},
+      { name: 'Rohan', username: 'rohan12', password: '198243' },
+      { name: 'Sam', username: 'sam124', password: '123876' },
+    ];
+
+    const usernames = users.map(user => user.username);
+
+    console.log(usernames); // [ 'dipakkr', 'rohan12', 'sam124', 'ro123' ]
+```
+
+⇒ **Filter Method**
+
+Filter methods take a function parameter which applies on each array element, then whichever element satisfies the parameter condition returns in the new array.
+
+```
+    const number = [5, 1, 4, 10, 15, 20, 12];
+
+    const result = number.filter(num => num>10);
+
+    console.log(result); // [15, 20, 12];
+```
+
 ---
 
 ### [About the Author]()
