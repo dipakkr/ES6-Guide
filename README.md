@@ -158,6 +158,106 @@ When no parameter is passed you can see we have to explicitly handle the error b
 
 Default value of A and B will be only used when no parameter is passed.
 
+### 4. Arrow Functions
+
+---
+
+An arrow function is a syntactically compact alternative to a regular function expression without its own binding to `this`, `super`,
+
+```
+**Using Regular Function Express (ES5)**
+
+    // Example 1
+    function add(a, b){
+    	return a+b;
+    }
+
+    add(5, 10);
+
+    // Example 2
+
+    const x = [1, 2, 3, 4, 5];
+
+    const square = x.map(function(x){
+    	return x*x;
+    });
+
+    console.log(sqaure);
+```
+
+**Using Arrow Functions (ES6)**
+
+```
+    // Example 1
+    const add = (a, b) => {
+    		return a+b;
+    }
+
+    add(5, 10)
+
+    //Example 2
+
+    const x = [1, 2, 3, 4, 5];
+
+    const square = x.map(num => num*num);
+    console.log(sqaure);
+```
+
+### 5. Array and Object Destructuring
+
+Destructuring is a new feature introduced in ES6 to unpack values from arrays or properties from object. It helps in improving the readability and performance of our code.
+
+**Destructuring in ES5**
+
+```
+    // Example 1 - Object Destructuring
+
+    var user = {
+    	name : 'Deepak',
+      username : 'dipakkr',
+      password : 12345
+    }
+
+    const name = user.name; // Deepak
+    const username = user.username; // dipakkr
+    const password = user.password // 12345
+
+    //Example 2 - Array Destructing
+
+    *c*onst fruits = ["apple", "mango", "banana", "grapes"];
+
+    const fruit1 = fruits[0];
+    const fruit2 = fruits[1];
+    const fruit3 = fruits[2];
+```
+
+**Destructuring in ES6**
+
+```
+    // Example 1 - Object Destructuring
+
+    var user = {
+    	name : 'Deepak',
+      username : 'dipakkr',
+      password : 12345
+    }
+
+    const {name, username, password} = user;
+    console.log(name);
+    console.log(username);
+    console.log(password);
+
+    //Example 2 - Array Destructing
+
+    const fruits = ["apple", "mango", "banana", "grapes"];
+
+    const [fruit1, fruit2, fruit3] = fruits;
+
+    console.log(fruit1); // apple
+    console.log(fruit2); // mango
+    console.log(fruit3); // banana
+```
+
 ---
 
 ### [About the Author]()
