@@ -1,5 +1,9 @@
 ![ES6 Guide by Deepak Kumar](./assets/ES6.png)
 
+### Show some :heart: and :star: the repo to support the project
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/diipakkr.svg?style=social)](https://twitter.com/diipakkr)
+
 ## Table Of Contents
 
 1. [Var, let and Const](#1-var-let-and-const)
@@ -15,8 +19,8 @@
 11. [Promises](#11-promises)
 12. [Async and Await](#12-async-and-await)
 13. ["this" and "new" keyword]()
-14. [Map and Weak Map]()
-15. [Sets and WeakSets]()
+
+### [About the Author](#about-the-author)
 
 ### 1. Var, let and const
 
@@ -598,7 +602,7 @@ Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer and an aspi
 
 Join the Community and Stay updated on new release
 
-Let's Connect ! - | [LinkedIn](https://www.linkedin.com/in/dipakkr/) | [Instagram](http://instagram.com/diipakkr) | [Twitter](https://twitter.com/diipakkr)
+Let's Connect ! - | [LinkedIn](http://bit.ly/2MQX5pK) | [Instagram](http://bit.ly/2lU6pBm) | [Twitter](http://bit.ly/2mcRaUk)
 
 ---
 
