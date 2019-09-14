@@ -7,7 +7,7 @@
 3. [Default Arguments](#3-default-arguments)
 4. [Arrow Functions](#4-arrow-functions)
 5. [Array and Object Destructuring](#5-array-and-object-destructuring)
-6. [Array - Map, Reduce, Filter](#6-array-map-reduce-filter)
+6. [Map, Reduce and Filter](#6-map-reduce-and-filter)
 7. [Iterables and Looping](#7-iterables-and-looping)
 8. [Rest and Spread Operator](#8-rest-and-spread-operator)
 9. [Object Literals](#9-object-literals)
@@ -278,7 +278,7 @@ Destructuring is a new feature introduced in ES6 to unpack values from arrays or
     console.log(fruit3); // banana
 ```
 
-### 6. Array - Map, Reduce, Filter
+### 6. Map, Reduce and Filter
 
 ---
 
