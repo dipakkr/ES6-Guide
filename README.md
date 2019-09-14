@@ -10,11 +10,11 @@
 6. [Array - Map, Reduce, Filter](#6-array-map-reduce-filter)
 7. [Iterables and Looping](#7-iterables-and-looping)
 8. [Rest and Spread Operator](#8-rest-and-spread-operator)
-9. [Object Literals]()
-10. [Classes in ES6]()
-11. ["this" and "new" keyword]()
-12. [Promises and Callback Hell]()
-13. [Async and Await]()
+9. [Object Literals](#9-object-literals)
+10. [Classes in ES6](#10-classes-in-es6)
+11. [Promises](#11-promises)
+12. [Async and Await](#12-async-and-await)
+13. ["this" and "new" keyword]()
 14. [Map and Weak Map]()
 15. [Sets and WeakSets]()
 
@@ -284,7 +284,7 @@ Destructuring is a new feature introduced in ES6 to unpack values from arrays or
 
 Map, Reduce and Filter are the array methods which was introduced in ES6. The common things among these three methods are that when these methods applied on an array, it returns a new array based on the given parameter.
 
-⇒ **Map Method**
+**Map Method**
 
 Let's understand the Map method by taking a simple example. Let's say you have users array that contains multiple user object. But, you just need the username of each user.
 
@@ -320,7 +320,7 @@ Now, let's solve this problem with `map()` method.
     console.log(usernames); // [ 'dipakkr', 'rohan12', 'sam124', 'ro123' ]
 ```
 
-⇒ **Filter Method**
+**Filter Method**
 
 Filter methods take a function parameter which applies on each array element, then whichever element satisfies the parameter condition returns in the new array.
 
@@ -416,7 +416,7 @@ Spread and Rest Operators are denoted by `...` three dots. These three dots can 
     console.log(add(1, 3, 4)); // 8
 ```
 
-⇒ Spread Operator
+Spread Operator
 
 - It allows iterables like `arrays / objects /strings` to be expanded into single arguments/elements.
 - Spread operator is opposite of Rest Parameter. In Rest Parameter We were collecting the list of arguments into an array, while with spread operator we can unpack the array elements.
@@ -509,14 +509,114 @@ Let's take a look at this example to see the working of Object literals.
     console.log(calculate.sum(5,7));    // 12
 ```
 
+### 10. **Classes in ES6**
+
+---
+
+JavaScript introduced in ECMAScript 2015. Classes support prototype-based inheritance, constructors, super calls, instance and static methods
+
+There are two ways to define classes in JavaScript.
+
+1. Class Declaration
+2. Class Expression
+
+**Class Declaration**
+
+In order to define class using-declaration method you need to use `class` keyword followed by className. The class name must start with Capital letter.
+
+```
+    class Rectangle {
+      constructor(height, width) {
+        this.height = height;
+        this.width = width;
+      }
+    }
+```
+
+**Class Expression**
+
+A class expression is another way to define a class. Class expressions can be named or unnamed. The name given to a named class expression is local to the class's body.
+
+```
+    let Rectangle = class {
+      constructor(height, width) {
+        this.height = height;
+        this.width = width;
+      }
+    };
+
+    console.log(Rectangle.name);
+```
+
+Mozilla Developer has great explanation for javascript classes. Read more [**here**](https://mzl.la/2mcPSZu)
+
+### 11. Promises
+
+---
+
+For supporting asynchronous programming, JavaScript uses a callback. However, the callback implementation has a major problem which is called as `Callback hell.` Promises come to rescue to solve the problem of callback hell.
+
+**Promises** are a pattern that greatly simplifies asynchronous programming by making the code look synchronous and avoid problems associated with callbacks.
+
+A Promise has three states.
+
+- **pending**: Initial state, neither fulfilled nor rejected.
+- **fulfilled**: It means that the operation completed successfully.
+- **rejected**: It means that the operation failed.
+
+![Promises](./assets/promises.png)
+_Image Credit : MDN_
+
+```
+let promise = new Promise(function(resolve, reject) {
+      setTimeout(() => resolve('Success ! '), 2000);
+    });
+
+    promise
+      .then(function(result) {
+        console.log(result);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+```
+
+```
+RESULT
+
+Success !
+```
+
+To Read More about `Promises`, Checkout this [link](http://bit.ly/2lQy1HP)
+
 ---
 
 ### [About the Author]()
 
-Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer and an aspiring Entrepreneur. I love building product that has real impact in society.
+Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer and an aspiring Entrepreneur. I love building and scaling products that has real impact in community.
 
-Let's connect here to know more about me.
+Join the Community and Stay updated on new release
 
-Join the Community and Stay updated on new release - | [LinkedIn](https://www.linkedin.com/in/dipakkr/) | [Instagram](http://instagram.com/diipakkr) | [Twitter](https://twitter.com/diipakkr)
+Let's Connect ! - | [LinkedIn](https://www.linkedin.com/in/dipakkr/) | [Instagram](http://instagram.com/diipakkr) | [Twitter](https://twitter.com/diipakkr)
 
 ---
+
+## Licenses
+
+```
+Copyright 2019 Deepak Kumar
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+```
