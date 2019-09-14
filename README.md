@@ -2,14 +2,14 @@
 
 ## Table Of Contents
 
-1. [Var, let and Const]()
-2. [Template literals]()
-3. [Default Arguments]()
-4. [Arrow Functions]()
-5. [Array and Object Destructuring]()
-6. [Iterables and Looping]()
-7. [Array - Map, Reduce, Filter]()
-8. [Rest and Spread Operator]()
+1. [Var, let and Const](#1-var-let-and-const)
+2. [Template literals](#2-template-literals)
+3. [Default Arguments](#3-default-arguments)
+4. [Arrow Functions](#4-arrow-functions)
+5. [Array and Object Destructuring](#5-array-and-object-destructuring)
+6. [Array - Map, Reduce, Filter](#6-array-map-reduce-filter)
+7. [Iterables and Looping](#7-iterables-and-looping)
+8. [Rest and Spread Operator](#8-rest-and-spread-operator)
 9. [Object Literals]()
 10. [Classes in ES6]()
 11. ["this" and "new" keyword]()
@@ -72,7 +72,7 @@
     console.log(c); // Throws Error, c not defined.
 ```
 
-### 2. Template Literals (Template Strings )
+### 2. Template Literals
 
 ---
 
@@ -260,7 +260,7 @@ Destructuring is a new feature introduced in ES6 to unpack values from arrays or
     console.log(fruit3); // banana
 ```
 
-### 6. Array - Map, Reduce and Filter
+### 6. Array - Map, Reduce, Filter
 
 Map, Reduce and Filter are the array methods which was introduced in ES6. The common things among these three methods are that when these methods applied on an array, it returns a new array based on the given parameter.
 
@@ -312,11 +312,11 @@ Filter methods take a function parameter which applies on each array element, th
     console.log(result); // [15, 20, 12];
 ```
 
-**7. Iterables and Looping**
+### 7. Iterables and Looping
 
 Here is the list of interables in JavaScript.
 
-| Element   | Description                                       |
+| Iterable  | Description                                       |
 | :-------- | :------------------------------------------------ |
 | Array     | Access each element by iterating over an array.   |
 | Map       | Iterates over the key-value pair                  |
@@ -347,6 +347,76 @@ Here is the list of interables in JavaScript.
     }
 
 So, we can see we are able to access interable elements directly with for...of method.
+
+### 8. Rest and Spread Operator
+
+---
+
+Spread and Rest Operators are denoted by `...` three dots. These three dots can be used in 2 ways, one as `Spread Operator` and other as `Rest Parameter`
+
+⇒ **Rest Parameter**
+
+- It collects all the remaining elements into an array.
+- Rest Parameter can collect any number of arguments into an array.
+- Rest Parameter has to be the last arguments.
+
+  **Without Using Rest Parameter**
+
+```
+    // Write a Function to print sum of arguments.
+
+    function add() {
+      var sum = 0;
+      for (var i = 0; i < arguments.length; i++) {
+        sum = sum + arguments[i];
+      }
+      return sum;
+    }
+
+    console.log(add(1, 2, 3, 4, 5)); // 15
+
+    console.log(add(1, 3, 4)); // 8
+```
+
+**Example Using Rest Operator**
+
+```
+    function add(...args) {
+      let sum = 0;
+      for (let i of args) {
+        sum += i;
+      }
+      return sum;
+    }
+
+    console.log(add(3, 4, 5, 10, 20)); // 42
+
+    console.log(add(1, 3, 4)); // 8
+```
+
+⇒ Spread Operator
+
+- It allows iterables like `arrays / objects /strings` to be expanded into single arguments/elements.
+- Spread operator is opposite of Rest Parameter. In Rest Parameter We were collecting the list of arguments into an array, while with spread operator we can unpack the array elements.
+
+Let's see an example to understand `spread`
+
+```
+    ## EXAMPLE - 1
+
+    const cars = ['BMW', 'Honda', 'Audi'];
+    const moreCars = ['Maruti', 'Swift', ...cars];
+
+    console.log(moreCars);  // ['Maruti', 'Swift', 'BMW', 'Honda', 'Audi'];
+
+
+    ## EXAMPLE - 2 //Copying one array to other
+
+    const array1 = [1, 2, 3];
+    const copiedArray = ...array1;
+
+    console.log(copiedArray); // [1, 2, 3]
+```
 
 ---
 
