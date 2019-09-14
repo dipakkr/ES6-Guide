@@ -312,6 +312,42 @@ Filter methods take a function parameter which applies on each array element, th
     console.log(result); // [15, 20, 12];
 ```
 
+**7. Iterables and Looping**
+
+Here is the list of interables in JavaScript.
+
+| Element   | Description                                       |
+| :-------- | :------------------------------------------------ |
+| Array     | Access each element by iterating over an array.   |
+| Map       | Iterates over the key-value pair                  |
+| Strings   | Access each character by interating over a string |
+| Sets      | Iterates over the set elements                    |
+| Arguments | Access each argument by interating over arguments |
+
+---
+
+`for...of` is a new feature got introduced in ES6 to access the interables element more easily. The **_for...of_** statement simply creates a loop iterating over iterable objects.
+
+**Looping Without `for...of`**
+
+    const array = [5, 10, 15, 20, 25, 30, 35];
+
+    for(var value in array){
+    	console.log(array[value]);
+    }
+
+    // To access the element of the array, We are using array[postion] notation.
+
+**Looping with `for...of`**
+
+    const array = [5, 10, 15, 20, 25, 30, 35];
+
+    for(var value of a){
+    	console.log(value);
+    }
+
+So, we can see we are able to access interable elements directly with for...of method.
+
 ---
 
 ### [About the Author]()
