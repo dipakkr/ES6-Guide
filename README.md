@@ -1,3 +1,5 @@
+![ES6 Guide | Deepak Kumar](./assets/ES6.png)
+
 ## Table Of Contents
 
 1. [Var, let and Const]()
@@ -318,6 +320,6 @@ Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer and an aspi
 
 Let's connect here to know more about me.
 
-Follow me on - | [LinkedIn]() | [Instagram]() | [Twitter]()
+Join the Community and Stay updated on new release - | [LinkedIn](https://www.linkedin.com/in/dipakkr/) | [Instagram](http://instagram.com/diipakkr) | [Twitter](https://twitter.com/diipakkr)
 
 ---
