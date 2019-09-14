@@ -22,9 +22,23 @@
 
 ---
 
-**1.1 VAR**
+**1.1 Var**
 
-- var keywords
+- Var keyword was previously used for declaring variable in javascript.
+- Variables declared with var can be re-initialised and re-declared too.
+- It is not **recommended** to use `var` after release of `let` and `const`.
+
+```
+    var a = 10;
+
+    for(var i=0;i<5;i++){
+    		var a = 20;
+    		console.log(a); //Returns 20
+    }
+
+    console.log(a); // Returns 20
+
+```
 
 **1.2 LET**
 
@@ -424,6 +438,75 @@ Let's see an example to understand `spread`
     const copiedArray = ...array1;
 
     console.log(copiedArray); // [1, 2, 3]
+```
+
+### 9. **Object Literals**
+
+---
+
+Object literals are used to create an object in javascript. Enhancement in Object literals in ES2015 (ES6) release has made it more powerful.
+
+- Object can be initialised by directly using the variable name. See Example 1 below.
+- Object's method in ES5 require `function` statement. This is no longer required in ES6, you can directly return statement. See Example 2 below.
+- Object literals key in ES6 can be dynamic. Any Express can be used to create a key.
+
+Let's take a look at this example to see the working of Object literals.
+
+**Object Literals Without ES6 ( ES5 Supported )**
+
+```
+    # Example 1
+
+    var username = 'dipakkr'
+    var name = 'Deepak Kumar'
+    var country = 'India'
+    var password = '123456'
+
+    var user = {
+    	username : username,
+      name : name,
+    	country : country,
+    	password : password
+    }
+
+    # Example 2
+
+    var calculate = {
+      sqaure :  function(a) { return a*a; },
+      sum : function(a, b) { return a + b; }
+    };
+
+    console.log(calculate.square(5));  // 25
+    console.log(calculate.sum(4,5));   //  9
+```
+
+**Object Literals with ES6**
+
+```
+    # Example 1
+
+    const username = 'dipakkr'
+    const name = 'Deepak Kumar'
+    const country = 'India'
+    const password = '123456'
+
+    const user = {
+    	username,
+    	name,
+    	country,
+    	password,
+    };
+
+
+    # Example 2
+
+    const calculate = {
+    	square(a) return a*a,
+      sum(a, b) return a+b
+    }
+
+    console.log(calculate.square(5));   // 25
+    console.log(calculate.sum(5,7));    // 12
 ```
 
 ---
