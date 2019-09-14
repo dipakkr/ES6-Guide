@@ -1,4 +1,4 @@
-![ES6 Guide | Deepak Kumar](./assets/ES6.png)
+![ES6 Guide by Deepak Kumar](./assets/ES6.png)
 
 ## Table Of Contents
 
