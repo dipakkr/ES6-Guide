@@ -20,6 +20,8 @@
 
 ### 1. Var, let and const
 
+---
+
 **1.1 VAR**
 
 - var keywords
@@ -207,6 +209,8 @@ An arrow function is a syntactically compact alternative to a regular function e
 
 ### 5. Array and Object Destructuring
 
+---
+
 Destructuring is a new feature introduced in ES6 to unpack values from arrays or properties from object. It helps in improving the readability and performance of our code.
 
 **Destructuring in ES5**
@@ -262,6 +266,8 @@ Destructuring is a new feature introduced in ES6 to unpack values from arrays or
 
 ### 6. Array - Map, Reduce, Filter
 
+---
+
 Map, Reduce and Filter are the array methods which was introduced in ES6. The common things among these three methods are that when these methods applied on an array, it returns a new array based on the given parameter.
 
 ⇒ **Map Method**
@@ -314,6 +320,8 @@ Filter methods take a function parameter which applies on each array element, th
 
 ### 7. Iterables and Looping
 
+---
+
 Here is the list of interables in JavaScript.
 
 | Iterable  | Description                                       |
@@ -360,7 +368,7 @@ Spread and Rest Operators are denoted by `...` three dots. These three dots can 
 - Rest Parameter can collect any number of arguments into an array.
 - Rest Parameter has to be the last arguments.
 
-  **Without Using Rest Parameter**
+**Without Using Rest Parameter**
 
 ```
     // Write a Function to print sum of arguments.
