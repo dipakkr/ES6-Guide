@@ -2,8 +2,6 @@
 
 ### Show some :heart: and :star: the repo to support the project
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/diipakkr.svg?style=social)](https://twitter.com/diipakkr)
-
 ## Table Of Contents
 
 1. [Var, let and Const](#1-var-let-and-const)
@@ -20,7 +18,23 @@
 12. [Async and Await](#12-async-and-await)
 13. ["this" and "new" keyword]()
 
-### [About the Author](#about-the-author)
+---
+
+**[About the Author](#about-the-author)**
+
+Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer. I love building and scaling products that has real impact in community.
+
+Join the Community and Stay updated on new release -
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/diipakkr.svg?style=social)](https://twitter.com/diipakkr)
+
+Let's Connect ! - | [LinkedIn](http://bit.ly/2MQX5pK) | [Instagram](http://bit.ly/2lU6pBm) | [Twitter](http://bit.ly/2mcRaUk)
+
+---
+
+<h2 style="text-align:center; padding:50px; background: #000">Let's get Started </h2>
+
+---
 
 ### 1. Var, let and const
 
@@ -596,7 +610,7 @@ To Read More about `Promises`, Checkout this [link](http://bit.ly/2lQy1HP)
 
 ---
 
-### [About the Author]()
+### About The Author
 
 Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer and an aspiring Entrepreneur. I love building and scaling products that has real impact in community.
 
