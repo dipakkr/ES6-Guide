@@ -26,7 +26,7 @@ Hi, I am Deepak Kumar, a Full Stack JavaScript Developer, Freelancer. I love bui
 
 Join the Community and Stay updated on new release -
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/diipakkr.svg?style=social)](https://twitter.com/diipakkr)
+[![Twitter Follow](https://img.shields.io/twitter/follow/HQdeepak.svg?style=social)](https://twitter.com/HQdeepak)
 
 Let's Connect ! - | [LinkedIn](http://bit.ly/2MQX5pK) | [Instagram](http://bit.ly/2lU6pBm) | [Twitter](http://bit.ly/2mcRaUk)
 
